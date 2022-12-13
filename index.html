@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaman Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/40428a93e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- -------------------header------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png" alt="Graphics">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-1">
+                <p>Graphic Designer</p>
+                <h1>Hi, I'm <span>Yaman</span><br>Khan from Pakistan </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------About---------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="Graphics">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis delectus incidunt
+                        laudantium iure cum sint atque commodi! Temporibus, aperiam voluptatem aspernatur odio optio
+                        repudiandae iure sapiente? Saepe cupiditate qui consequatur, </p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Logos</span><br>Designing variety of Logos</li>
+                            <li><span>Flyer/Banner</span><br>Graphic Designing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>Current-2022</span><br>UI/UX Design Intership at XYZ Place</li>
+                            <li><span>2019-2021</span><br>Logo Designing Intership at XYZ Place</li>
+                            <li><span>2018-2019</span><br>Graphic Design Intership at XYZ Place</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>Matriculation from FDC Faisal</li>
+                            <li><span>2019</span><br>Intermediate from FDC Faisal</li>
+                            <li><span>Since 2019</span><br>Media Sciences from KIET University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- services----------------- -->
+
+        <div class="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services_list">
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati impedit atque in</p>
+                        <a href="">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-marker"></i>
+                        <h2>Logo Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati impedit atque in</p>
+                        <a href="">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati impedit atque in</p>
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------portfolio------------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Construction Logo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quidem quas laboriosam,
+                                ducimus non molestias!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Party Flyer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quidem quas laboriosam,
+                                ducimus non molestias!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Website UI</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quidem quas laboriosam,
+                                ducimus non molestias!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+            
+        </div>
+
+        
+
+        <script>
+            // about
+            var tab_links = document.getElementsByClassName('tab_links');
+            var tab_contents = document.getElementsByClassName('tab_contents');
+            function opentab(tabname) {
+                for (tab_link of tab_links) {
+                    tab_link.classList.remove("active_link")
+                }
+
+                for (tab_content of tab_contents) {
+                    tab_content.classList.remove("active_tab")
+                }
+                event.currentTarget.classList.add("active_link");
+                document.getElementById(tabname).classList.add("active_tab");
+                // tabname is the id of each button
+
+                // about
+            }
+
+        </script>
+</body>
+
+</html>
